@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, Admin!</h1>
+        <h2>Water Quality Data Dashboard</h2>
+
+        <!-- ThingSpeak Graph (Replace YOUR_CHANNEL_ID with your own) -->
+        <div class="graph">
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2699387/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        </div>
+
+        <div class="graph">
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2699387/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script>
+        // Check if the user is logged in
+        if (localStorage.getItem('loggedIn') !== 'true') {
+            // Redirect to login page if not logged in
+            window.location.href = "../pages/admin_login.html";
+        }
+
+        // Simple logout function
+        function logout() {
+            // Clear the login flag in localStorage
+            localStorage.removeItem('loggedIn');
+
+            // Redirect to the login page
+            window.location.href = "admin_login.html";
+        }
+    </script>
+</body>
+</html>

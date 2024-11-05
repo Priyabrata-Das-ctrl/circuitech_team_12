@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+.subheading {
+    font-size: 1.2em;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Main Section Styles */
+main h2 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.login-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.login-option {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.login-btn:hover {
+    transform: scale(1.1);
+}
+
+.login-btn img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.login-btn span {
+    display: block;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Login and Registration Form Styles */
+.login-container, .register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f7f6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2,
+.register-container h2 {
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.forgot-password {
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Styles (For future use) */
+.dashboard-container {
+    padding: 20px;
+    background-color: #f7f9fa;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.dashboard h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Extra styling for buttons and inputs */
+button, input[type="button"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: #218838;
+}
+
